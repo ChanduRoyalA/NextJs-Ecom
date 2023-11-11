@@ -38,4 +38,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ### cmd for packages
 npm i js-cookie
-
+npm i mongoose mongodb 
+npm i react-loader-spinner
