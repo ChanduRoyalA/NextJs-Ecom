@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation'
 import levisLogo from '../../assets/levisLogo.png'
 import nikePNG from '../../assets/nikePNG.png'
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 const Userdashboard = () => {
@@ -22,7 +23,7 @@ const Userdashboard = () => {
         <div className=' h-auto col-span-3 flex flex-col gap-4'>
           <h1 className='text-4xl text-start w-full'>Clothes That Get YOU Noticed</h1>
           <p className=''>Fashion is part of the daily air and it does not quite help that it changes all the time.<br className='hidden md:flex' /> Clothes have always been a marker of the era and we are in a revolution.<br className='hidden md:flex' /> Your fashion makes you been seen and heard that way you are.<br className='hidden md:flex' /> So, celebrate the seasons new and exciting fashion in your own way.</p>
-          <button className='w-fit bg-[#214E34] text-white font-semibold px-4 py-1'>Shop Now</button>
+          <Link href={'/user/products'}> <button className='w-fit bg-[#214E34] text-white font-semibold px-4 py-1'>Shop Now</button></Link>
         </div>
         <div className='hidden md:flex md:col-span-2'>
           <img src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-home-img.png" width={900} height={900} />
