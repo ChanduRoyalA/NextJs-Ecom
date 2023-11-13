@@ -7,7 +7,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri"
 import { AiOutlineUser } from 'react-icons/ai'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence, easeInOut } from 'framer-motion'
 
 
 const Nav = () => {
@@ -32,7 +32,8 @@ const Nav = () => {
         mbView && (
           <motion.div
             initial={{ x:-200  }}
-            animate={{ x:0 }}
+            animate={{ x: 0 }}
+            transition={{duration:0.1,ease:easeInOut}}
             className='md:hidden w-screen pt-2 px-16 bg-white h-screen absolute  top-10 left-0 rounded-lg'>
             <div className='flex justify-between' >
               <Image src={Logo} width={90} />
