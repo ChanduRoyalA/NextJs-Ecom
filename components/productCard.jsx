@@ -16,7 +16,7 @@ const ProductCard = ({ data }) => {
         <div className='flex flex-col grow  md:py-5 py-2 px-4' >
           <div className='flex justify-between items-center'>
             <h1 className='font-semibold'>{title}</h1>
-            <p className='md:hidden rounded-lg py-1 font-bold bg-[#214E34] text-white px-2'>{brand}</p>
+            <p className='md:hidden rounded-lg py-1 font-bold bg-[#214E34] text-white text-xs px-2'>{brand}</p>
           </div>
           <p className='hidden md:flex my-2'>{style}</p>
           <p className='hidden md:flex w-fit rounded-lg py-1 font-bold bg-[#214E34] text-white px-2'>{brand}</p>
