@@ -40,3 +40,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 npm i js-cookie
 npm i mongoose mongodb 
 npm i react-loader-spinner
+npm install react-icons --save
+npm install framer-motion
