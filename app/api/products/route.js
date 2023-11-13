@@ -11,3 +11,16 @@ export async function GET(req) {
     return NextResponse.json({ result: "Failed", message: error });
   }
 }
+
+export async function POST(req) {
+    try {
+      const {_id}=await req.json()
+    await ConnectDB();
+    const getItem = await products.findOne({_id});
+    return NextResponse.json({ getItem, result: "Success" });
+  } catch (error) {
+    return NextResponse.json({ result: "Failed", message: error });
+  }
+}
+
+
