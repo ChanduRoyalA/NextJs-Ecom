@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import LoginSvg from '../assets/LoginSvg.svg'
+import LoginImg from '../assets/LoginImg.jpg'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
@@ -44,15 +44,15 @@ const RegisterForm = () => {
     }
     return (
         <div className='h-screen flex '>
-            <div className='h-full w-1/2  items-center justify-center flex bg-yellow-300 '>
-                <Image src={LoginSvg} height={650} width={650} />
+            <div className='h-full w-1/2 hidden md:flex  items-center justify-center '>
+                <Image src={LoginImg} height={500} width={500} />
             </div>
             <div className='grow  flex justify-center items-center '>
                 <div className=' shadow-2xl rounded-lg px-4 py-8 flex flex-col gap-2 bg-white'>
                     <input className=' bg-slate-100 focus:outline-none py-1 px-4' placeholder='Name' onChange={(e) => { setname(e.target.value) }} value={name} />
                     <input className=' bg-slate-100 focus:outline-none py-1 px-4' placeholder='Email' onChange={(e) => { setemail(e.target.value) }} value={email} />
                     <input className=' bg-slate-100 focus:outline-none py-1 px-4' placeholder='Password' type='password' onChange={(e) => { setpassword(e.target.value) }} value={password} />
-                    <button className='flex justify-center bg-green-500 text-white font-bold py-1' onClick={handleSignUp}>{
+                    <button className='flex justify-center bg-[#214E34] text-white font-medium py-1' onClick={handleSignUp}>{
                         status ? <ColorRing
                             visible={true}
                             height="24"
