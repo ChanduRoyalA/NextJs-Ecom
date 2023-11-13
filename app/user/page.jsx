@@ -12,7 +12,7 @@ const Userdashboard = () => {
   const router = useRouter()
   const userId = Cookies.get('userId')
   if (userId === undefined) {
-    router.push('/')
+    return router.push('/')
   }
   return (
     <div className='py-10 h-auto '>
