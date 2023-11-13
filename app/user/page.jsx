@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import Cookies from 'js-cookie'
 import { useRouter } from 'next/navigation'
 import levisLogo from '../../assets/levisLogo.png'
@@ -12,7 +12,9 @@ const Userdashboard = () => {
   const router = useRouter()
   const userId = Cookies.get('userId')
   if (userId === undefined) {
-    return router.push('/')
+    useEffect(() => {
+      return router.push('/')
+    },[])
   }
   return (
     <div className='py-10 h-auto '>
