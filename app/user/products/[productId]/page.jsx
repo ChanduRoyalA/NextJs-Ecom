@@ -91,20 +91,14 @@ const Itempage = () => {
                             </div>
                             <div className="md:hidden">
                                 {
-                                    !avail && (<p className=' bg-red-400 text-white font-bold px-2 py-1 w-fit '>{itemDetails.availability}</p>)
-                                }
-                                {
-                                    avail && (<p className=' bg-green-400 text-white font-bold px-2 py-1 w-fit '>{itemDetails.availability}</p>)
+                                    avail ? (<p className=' bg-green-400 text-white font-bold px-2 py-1 w-fit '>{itemDetails.availability}</p>) : (<p className=' bg-red-400 text-white font-bold px-2 py-1 w-fit '>{itemDetails.availability}</p>)
                                 }
                             </div>
 
                             <div className=" hidden md:flex flex-row gap-2 items-center">
                                 <div className="hidden md:flex">
                                     {
-                                        !avail && (<p className=' bg-red-400 text-white font-bold px-2 py-1 w-fit '>{itemDetails.availability}</p>)
-                                    }
-                                    {
-                                        avail && (<p className=' bg-green-400 text-white font-bold px-2 py-1 w-fit '>{itemDetails.availability}</p>)
+                                        avail ? (<p className=' bg-green-400 text-white font-bold px-2 py-1 w-fit '>{itemDetails.availability}</p>) :(<p className=' bg-red-400 text-white font-bold px-2 py-1 w-fit '>{itemDetails.availability}</p>)
                                     }
                                 </div>
 
