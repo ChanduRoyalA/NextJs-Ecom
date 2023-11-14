@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const Footer = () => {
   return (
-      <footer className='flex flex-col md:flex-row justify-between mt-10'>
+      <footer className='flex flex-col md:flex-row justify-between mt-20'>
           <div className="mt-10 md:mt-0 flex justify-between flex-col  order-2 md:order-1 gap-3 md:gap-16 self-center md:self-auto">
               <Image src={Logo} width={100} height={100}/>
               <Image src={socialIcons} />
