@@ -4,7 +4,9 @@ import { useParams } from "next/navigation"
 import { useEffect, useState } from "react"
 import { ColorRing } from "react-loader-spinner"
 import { BsFillStarFill } from 'react-icons/bs'
-import { AiOutlineUser } from 'react-icons/ai'
+
+import { AiOutlineUser, AiOutlineHeart, AiOutlineShoppingCart } from 'react-icons/ai'
+
 
 const Itempage = () => {
     var avail = true
@@ -87,16 +89,34 @@ const Itempage = () => {
                                 </div>
 
                             </div>
-                            <div className="flex gap-2 items-center">
+                            <div className="md:hidden">
                                 {
                                     !avail && (<p className=' bg-red-400 text-white font-bold px-2 py-1 w-fit '>{itemDetails.availability}</p>)
                                 }
                                 {
                                     avail && (<p className=' bg-green-400 text-white font-bold px-2 py-1 w-fit '>{itemDetails.availability}</p>)
                                 }
+                            </div>
+
+                            <div className=" hidden md:flex flex-row gap-2 items-center">
+                                <div className="hidden md:flex">
+                                    {
+                                        !avail && (<p className=' bg-red-400 text-white font-bold px-2 py-1 w-fit '>{itemDetails.availability}</p>)
+                                    }
+                                    {
+                                        avail && (<p className=' bg-green-400 text-white font-bold px-2 py-1 w-fit '>{itemDetails.availability}</p>)
+                                    }
+                                </div>
+
+
                                 <button className=' bg-green-400 text-white font-bold px-2 py-1 w-fit '>Add to Cart</button>
                                 <button className=' bg-green-400 text-white font-bold px-2 py-1 w-fit '>Add to Like</button>
                             </div>
+                            <div className="md:hidden flex gap-1 justify-between mt-4">
+                                <button className='  text-[#214E34] font-bold px-2 py-1 w-fit '> <AiOutlineShoppingCart style={{fontSize:"30px"}}/> </button>
+                                <button className=' text-[#214E34]  font-bold px-2 py-1 w-fit '> <AiOutlineHeart style={{fontSize:"30px"}}/> </button>
+                            </div>
+
                         </div>
                     </div>
                 </div>

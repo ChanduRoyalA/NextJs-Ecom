@@ -24,7 +24,7 @@ const Footer = () => {
               </div>
               <div className="FooterSubDivs">
                   <h1 className="font-bold text-lg">Learn</h1>
-                  <p>Blog</p>
+                  <p>Products</p>
                   <p>Cookies policy</p>
                   <p>Privacy policy</p>
               </div>
