@@ -63,13 +63,13 @@ const Itempage = () => {
                 avail = false
             }
             return (
-                <div className="h-screen md:h-screen  grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-2">
+                <div className="h-auto md:h-screen  grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-2">
                     <div className="h-full flex justify-center items-center ">
                         <div className="h-full w-full md:h-1/2 md:w-1/2 rounded-lg overflow-hidden shadow-lg">
                             <img src={itemDetails.image_url} className="h-full w-full" />
                         </div>
                     </div>
-                    <div className="h-fit md:h-full  flex justify-center items-center">
+                    <div className=" h-full md:h-full  flex justify-center items-center">
                         <div className="h-full md:h-1/2 border-2 border-[#214E34] rounded-lg w-full flex flex-col gap-2 px-6 py-5">
                             <div className="flex flex-col md:flex-row justify-between items-start gap-2  md:items-center">
                                 <h1 className="text-2xl font-semibold">{itemDetails.title}</h1>
