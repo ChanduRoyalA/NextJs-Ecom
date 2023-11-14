@@ -63,15 +63,15 @@ const Itempage = () => {
                 avail = false
             }
             return (
-                <div className="h-screen  grid grid-rows-1  md:grid-cols-2 gap-1">
+                <div className="h-screen  grid grid-rows-1  md:grid-cols-2 gap-10 md:gap-2">
                     <div className="h-full flex justify-center items-center">
-                        <div className="h-1/2 w-1/2 rounded-lg overflow-hidden shadow-lg">
+                        <div className="h-full w-full md:h-1/2 md:w-1/2 rounded-lg overflow-hidden shadow-lg">
                             <img src={itemDetails.image_url} className="h-full w-full" />
                         </div>
                     </div>
                     <div className="h-full  flex justify-center items-center">
                         <div className="h-full md:h-1/2 border-2 border-[#214E34] rounded-lg w-full flex flex-col gap-2 px-6 py-5">
-                            <div className="flex justify-between items-center">
+                            <div className="flex flex-col md:flex-row justify-between items-start gap-2  md:items-center">
                                 <h1 className="text-2xl font-semibold">{itemDetails.title}</h1>
                                 <p className="px-2 py-1 bg-red-500 text-white font-semibold text-sm">{itemDetails.brand}</p>
                             </div>
@@ -124,7 +124,7 @@ const Itempage = () => {
         }
     }
   return (
-      <div>
+      <div className="mt-20 md:mt-0">
           {renderView()}
       </div>
   )
